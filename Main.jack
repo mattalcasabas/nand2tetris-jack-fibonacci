@@ -1,0 +1,37 @@
+class Main {
+   function void main() {
+      var boolean loop;
+      var int x;
+      var int y;
+      var int z;
+      var int i;
+      var int userInput;
+      let loop = true;
+
+      while(loop) {
+         let x = 0;
+         let y = 1;
+
+         let i = 0;
+
+         let userInput = Keyboard.readInt("Enter the Fibonacci number to be found (-1 to exit): ");
+
+         if((userInput) = -1) {
+            let loop = false;
+         }
+
+         else {
+            while(i < (userInput)) {
+               let z = x + y;
+               let x = y;
+               let y = z;
+               let i = i + 1;
+            }
+            do Output.printString("x = ");
+            do Output.printInt(x);
+            do Output.println();
+         }
+      }
+      return;
+   }
+}
